@@ -447,3 +447,51 @@ footer .post-text {
 .footer-svg {
   fill: #f4f4fd;
 }
+.footer-input {
+  max-width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.footer-subscride-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-subscride-btn {
+  background-color: #4d5ae5;
+  min-width: 165px;
+  height: 40px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  gap: 16px;
+  border: none;
+  cursor: pointer;
+}
+.footer-subscride-svg {
+  fill: #fff;
+}
