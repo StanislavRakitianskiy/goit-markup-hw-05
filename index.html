@@ -491,6 +491,93 @@
       </section>
       <!-- our-portfolio -->
     </main>
+    <!-- modal -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg class="modal-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <fieldset class="modal-fieldset">
+            <legend class="modal-legend">
+              Leave your contacts and we will call you back
+            </legend>
+            <label class="modal-label">
+              <p class="modal-input-text">Name</p>
+              <div class="modal-input-svg">
+                <input
+                  type="text"
+                  class="modal-input"
+                  name="user-name"
+                  required
+                  autofocus
+                />
+                <svg class="modal-svg-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <p class="modal-input-text">Phone</p>
+              <div class="modal-input-svg">
+                <input
+                  type="tel"
+                  class="modal-input"
+                  name="user-tel"
+                  required
+                />
+                <svg class="modal-svg-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <p class="modal-input-text">Email</p>
+              <div class="modal-input-svg">
+                <input
+                  type="email"
+                  class="modal-input"
+                  name="user-email"
+                  required
+                />
+                <svg class="modal-svg-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="modal-label">
+              <p class="modal-input-text">Comment</p>
+              <textarea
+                name="user-comment"
+                placeholder="Text input"
+                class="modal-textarea"
+              ></textarea>
+            </label>
+          </fieldset>
+          <label class="modal-label-policy">
+            <input
+              type="checkbox"
+              name="policy"
+              value="privacy-policy"
+              class="modal-privacypolicy"
+              required
+            />
+            <p class="modal-checkbox-text">
+              I accept the terms and conditions of the
+              <a
+                href="https://megasport.ua/ru/static/politika-konfidentsiynosti/?srsltid=AfmBOooz2nsW5zhR_V8Mebo-VHTnmROVJFRx6x0CNjxiKH2bkQgrXzOt"
+                target="_blank"
+                class="modal-link-policy"
+                >Privacy Policy</a
+              >
+            </p>
+          </label>
+          <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     <!-- footer -->
     <footer class="footer-container">
       <div class="container">
@@ -561,7 +648,13 @@
             class="footer-subscride-client"
           >
             <label>
-              <input type="email" name="user-name" class="footer-input" placeholder="E-mail"/>
+              <input
+                type="email"
+                name="user-email"
+                class="footer-input"
+                placeholder="E-mail"
+                required
+              />
             </label>
             <button class="footer-subscride-btn" type="submit">
               Subscride
