@@ -402,7 +402,7 @@ img {
   transform: translate(-50%, -50%);
   max-width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -415,24 +415,40 @@ img {
   transition-delay: 0ms;
 }
 .modal-close {
-  align-self: flex-end;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   background-color: #e7e9fc;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   border: none;
   cursor: pointer;
-  margin-bottom: 24px;
-  transition-property: background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 }
 .modal-close:hover {
   background-color: #404bbf;
+  border: none;
+}
+.modal-close:focus {
+  background-color: #404bbf;
+}
+.modal-svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+.modal-close:focus .modal-svg {
+  fill: #fff;
 }
 .modal-close:hover .modal-svg {
   fill: #fff;
