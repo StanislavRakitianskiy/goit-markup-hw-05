@@ -544,7 +544,7 @@ img {
 .modal-field-checkbox {
   margin-bottom: 24px;
 }
-.modal-privacypolicy {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -584,7 +584,7 @@ img {
   fill: transparent;
   margin-right: 8px;
 }
-.modal-privacypolicy:checked + .modal-label-policy > .modal-craft-checkbox {
+.visually-hidden:checked + .modal-label-policy > .modal-craft-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
