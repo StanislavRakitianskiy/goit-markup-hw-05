@@ -444,7 +444,7 @@ img {
 .modal-svg {
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 }
 .modal-close:focus .modal-svg {
