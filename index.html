@@ -65,7 +65,7 @@
           <h1 class="about-text-content">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="about-button">Order Service</button>
+          <button type="button" class="about-button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- main-about -->
@@ -581,9 +581,9 @@
     </footer>
     <!-- footer -->
     <!-- modal -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -675,5 +675,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
